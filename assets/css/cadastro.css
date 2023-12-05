@@ -1,0 +1,798 @@
+/*--------------------------------------------------  CADASTRO -----------------------------------------------*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+:root {
+    --text-color: #222327;
+    --fundo-color: #ffffff;
+    --blue-color: #00A1EB;
+    --gray-color: #555555;
+}
+
+.cadastro-atual {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.cadastro-atual .div {
+    background-color: #ffffff;
+    width: 1920px;
+    height: 1080px;
+    position: relative;
+}
+
+.cadastro-atual .overlap {
+    position: absolute;
+    width: 1440px;
+    height: 1080px;
+    top: 0;
+    left: 480px;
+    background-color: #f1f3f6;
+}
+
+.cadastro-atual .login-illustrator {
+    position: absolute;
+    width: 632px;
+    height: 632px;
+    top: 184px;
+    left: 404px;
+}
+
+.cadastro-atual .navbar {
+    position: absolute;
+    width: 1440px;
+    height: 90px;
+    top: 0;
+    left: 0;
+}
+
+.cadastro-atual .navbar a {
+    color: var(--text-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 30px;
+    transition: all .50s ease;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: var(--blue-color);
+}
+
+.usuario {
+    display: flex;
+    align-items: center;
+
+}
+
+.usuario a {
+    margin-right: 25px;
+    margin-left: 10px;
+    color: var(--text-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all .50s ease;
+}
+
+.entrar {
+    margin-left: 15px;
+}
+
+.entrar-cadastro {
+    text-align: center;
+    margin-left: 10px;
+}
+
+.usuario .entrar a:hover {
+    color: #254682;
+}
+
+.usuario .cadastro a:hover {
+    color: #254682;
+}
+
+.cadastro-atual .overlap-group {
+    width: 1248px;
+    height: 90px;
+    background-color: #ffffff01;
+}
+
+.cadastro-atual .navbar-textos-cadastro {
+    position: relative;
+    width: 861px;
+    height: 36px;
+    top: 27px;
+    left: 290px;
+}
+
+.cadastro-atual .servicos-cadastro {
+    position: absolute;
+    height: 36px;
+    top: -1px;
+    left: 151px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    line-height: 35.2px;
+    white-space: nowrap;
+}
+
+.cadastro-atual .servios {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cadastro-atual .nav-bar-cadastro {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    line-height: 35.2px;
+    white-space: nowrap;
+}
+
+.cadastro-atual .contato {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 0;
+    left: 273px;
+}
+
+.cadastro-atual .privacidade {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 0;
+    left: 413px;
+}
+
+.cadastro-atual .cadastro {
+    display: inline-flex;
+    align-items: flex-start;
+    position: absolute;
+    top: 0;
+    left: 699px;
+}
+
+.cadastro-atual .choice {
+    position: relative;
+    width: 35px;
+    height: 36px;
+}
+
+.cadastro-atual .cadastro-cadastro {
+    position: relative;
+    width: 110px;
+    margin-top: -1px;
+    margin-left: -20px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 14px;
+    text-align: right;
+    letter-spacing: 0.7px;
+    line-height: 35.2px;
+}
+
+.cadastro-atual .entrar {
+    display: flex;
+    width: 114px;
+    align-items: flex-start;
+    gap: 10px;
+    position: absolute;
+    top: 0;
+    left: 535px;
+}
+
+.cadastro-atual .entrar-cadastro {
+    position: relative;
+    width: 95px;
+    margin-top: -1px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 14px;
+    text-align: right;
+    letter-spacing: 0.7px;
+    line-height: 35.2px;
+}
+
+.cadastro-atual .user {
+    position: absolute;
+    width: 35px;
+    height: 36px;
+    top: 0;
+    left: 0;
+}
+
+.cadastro-atual .overlap-2 {
+    position: absolute;
+    width: 480px;
+    height: 1080px;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 0px 12px 50px #0000001a;
+}
+
+.cadastro-atual .logo {
+    position: absolute;
+    width: 199px;
+    height: 58px;
+    top: 120px;
+    left: 131px;
+}
+
+.cadastro-atual .text-wrapper-5 {
+    position: absolute;
+    top: 201px;
+    left: 145px;
+    font-family: "Poppins-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.cadastro-atual .group {
+    position: absolute;
+    width: 414px;
+    height: 84px;
+    top: 471px;
+    left: 35px;
+}
+
+.cadastro-atual .overlap-group-2 {
+    position: absolute;
+    width: 410px;
+    height: 50px;
+    top: 34px;
+    left: 0;
+    background-color: #f1f3f6;
+    border-radius: 8px;
+}
+
+.cadastro-atual .div-2 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 360px;
+    background-color: #0078be;
+    border-radius: 8px;
+}
+
+.cadastro-atual .frame {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 13px;
+    left: 13px;
+}
+
+.cadastro-atual .text-wrapper-6 {
+    position: absolute;
+    top: 13px;
+    left: 19px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #555555;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.cadastro-atual .text-wrapper-7 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #555555;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.cadastro-atual .overlap-3 {
+    position: absolute;
+    width: 414px;
+    height: 84px;
+    top: 364px;
+    left: 38px;
+}
+
+.cadastro-atual .group-2 {
+    position: absolute;
+    width: 414px;
+    height: 84px;
+    top: 0;
+    left: 0;
+}
+
+.cadastro-atual .img {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: 46px;
+    left: 372px;
+}
+
+.cadastro-atual .group-3 {
+    position: absolute;
+    width: 414px;
+    height: 84px;
+    top: 578px;
+    left: 35px;
+}
+
+.cadastro-atual .overlap-4 {
+    position: absolute;
+    width: 412px;
+    height: 52px;
+    top: 711px;
+    left: 35px;
+}
+
+.cadastro-atual .div-wrapper {
+    position: absolute;
+    width: 157px;
+    height: 24px;
+    top: 28px;
+    left: 130px;
+}
+
+.cadastro-atual .text-wrapper-8 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.cadastro-atual .overlap-wrapper {
+    position: absolute;
+    width: 412px;
+    height: 50px;
+    top: 0;
+    left: 0;
+}
+
+.cadastro-atual .overlap-5 {
+    position: relative;
+    width: 410px;
+    height: 50px;
+    background-color: #0078be;
+    border-radius: 8px;
+    box-shadow: 0px 8px 12px #fd74014c;
+}
+
+.cadastro-atual .text-wrapper-9 {
+    position: absolute;
+    top: 13px;
+    left: 130px;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.cadastro-atual .overlap-group-wrapper {
+    position: absolute;
+    width: 412px;
+    height: 50px;
+    top: 835px;
+    left: 35px;
+}
+
+.cadastro-atual .overlap-6 {
+    position: relative;
+    width: 410px;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid;
+    border-color: #0078be;
+    box-shadow: 0px 8px 12px #fd74014c;
+}
+
+.cadastro-atual .text-wrapper-10 {
+    position: absolute;
+    top: 12px;
+    left: 127px;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #0078be;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.cadastro-atual .group-4 {
+    position: absolute;
+    width: 412px;
+    height: 21px;
+    top: 791px;
+    left: 35px;
+}
+
+.cadastro-atual .line {
+    left: 0;
+    position: absolute;
+    width: 175px;
+    height: 1px;
+    top: 10px;
+    object-fit: cover;
+}
+
+.cadastro-atual .line-2 {
+    left: 235px;
+    position: absolute;
+    width: 175px;
+    height: 1px;
+    top: 10px;
+    object-fit: cover;
+}
+
+.cadastro-atual .text-wrapper-11 {
+    position: absolute;
+    top: 0;
+    left: 195px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #c2c2c2;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.nome {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+    top: 278px;
+    left: 38px;
+}
+
+.nome p {
+    position: relative;
+    width: fit-content;
+    margin-top: 11px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #555555;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+input {
+    position: relative;
+    width: 410px;
+    background-color: #f1f3f6;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    position: absolute;
+    top: 46px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #555555;
+    font-size: 17px;
+    letter-spacing: 0;
+    line-height: normal;
+    padding-left: 30px;
+}
+
+.nome .bloco {
+    position: absolute;
+    width: 50px;
+    top: 46px;
+    left: 360px;
+    background-color: #0078be;
+    height: 50px;
+    border-radius: 8px;
+}
+
+.nome .user {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: 56px;
+    left: 372px;
+}
+
+
+.email {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+    top: 390px;
+    left: -7px;
+}
+
+.email .p-email {
+    position: relative;
+    width: fit-content;
+    margin-top: 11px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #555555;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+input {
+    position: relative;
+    width: 410px;
+    background-color: #f1f3f6;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    position: absolute;
+    top: 46px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #555555;
+    font-size: 17px;
+    letter-spacing: 0;
+    line-height: normal;
+    padding-left: 30px;
+}
+
+.email .bloco-email {
+    position: absolute;
+    width: 50px;
+    top: 46px;
+    left: 360px;
+    background-color: #0078be;
+    height: 50px;
+    border-radius: 8px;
+}
+
+.email .user {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: 56px;
+    left: 372px;
+}
+
+
+
+.senha {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+    top: 505px;
+    right: 52px;
+}
+
+.senha .p-senha {
+    position: relative;
+    width: fit-content;
+    margin-top: 11px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #555555;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+input {
+    position: relative;
+    width: 410px;
+    background-color: #f1f3f6;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    position: absolute;
+    top: 46px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #555555;
+    font-size: 17px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.senha .bloco-senha {
+    position: absolute;
+    width: 50px;
+    top: 46px;
+    left: 360px;
+    background-color: #0078be;
+    height: 50px;
+    border-radius: 8px;
+}
+
+.senha .user {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: 56px;
+    left: 372px;
+}
+
+.button {
+    position: fixed;
+    width: 412px;
+    height: 50px;
+    top: 0;
+    left: 0;
+
+}
+
+#button-1 {
+    width: 410px;
+    height: 50px;
+    position: relative;
+    width: 410px;
+    height: 50px;
+    background-color: #0078be;
+    border-radius: 8px;
+    box-shadow: 0px 8px 12px #fd74014c;
+    border: none;
+    position: absolute;
+    top: 651px;
+    left: 38px;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.linhas {
+    position: relative;
+    width: 410px;
+    height: 21px;
+    top: 690px;
+    left: 38px;
+}
+
+.linhas .line {
+    left: 0;
+    position: absolute;
+    width: 175px;
+    height: 1px;
+    top: 10px;
+    object-fit: cover;
+}
+
+.linhas .img-linha {
+    left: 235px;
+    position: absolute;
+    width: 175px;
+    height: 1px;
+    top: 10px;
+    object-fit: cover;
+}
+
+.linhas .texto-linha {
+    position: absolute;
+    top: 0;
+    left: 195px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #c2c2c2;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.button-2 {
+    position: fixed;
+    width: 412px;
+    height: 50px;
+    top: 0;
+    left: 0;
+
+}
+
+#button {
+    position: relative;
+    width: 410px;
+    top: 721px;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid;
+    border-color: #0078be;
+    box-shadow: 0px 8px 12px #fd74014c;
+    left: 38px;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #0078be;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    cursor: pointer;
+}
+
+#button:hover {
+    transform: scale(1.02);
+}
+
+button:hover {
+    transform: scale(1.02);
+}
+
+.bloco:hover {
+    transform: scale(1.04);
+}
+
+.bloco-email:hover {
+    transform: scale(1.04);
+}
+
+.bloco-senha:hover {
+    transform: scale(1.04);
+}
+
+
+#email-login {
+    top: 300px;
+    left: 38px;
+}
+
+#senha-login {
+    top: 415px;
+    left: -6px;
+}
+
+#button-login {
+    top: -70px;
+}
+
+#linhas-login {
+    top: 640px;
+}
+
+#button-2-login {
+    top: 15px;
+}   
